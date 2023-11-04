@@ -71,13 +71,15 @@ function askQuestion(question, opt1, opt2) {
 function renderIntro() {
   $("#jsmain").html(
     "\
-    <p>Welcome! What would you like to name your AI?</p>\
+    <p id='introParagraph'>Welcome! What would you like to name your AI?</p>\
     <form id='nameForm' onsubmit='return submitName(this)'>\
     <input type='text' name='aiName'/>\
     <input type='submit' value='Submit'/>\
     </form>\
     "
   );
+  $("#introParagraph").hide().fadeIn(1000)
+  $("#nameForm").hide().delay(1000).fadeIn(1000)
 }
 
 function renderQuestions() {
