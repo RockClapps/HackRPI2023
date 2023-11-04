@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Learning about Machine Learning </title>
+    <title>AI Simulator
+    </title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <script
-      src="https://cdn.plot.ly/plotly-2.27.0.min.js"
-      charset="utf-8"
-    ></script>
     <script src="scripts/code.js"></script>
   </head>
   <body>
-    <h1>Learning About Machine Learning</h1>
-    <div id="tester" style="width:600px;height:250px;"></div>
+    <div id=title>
+      <h1>Artificial Intellegence Simulator</h1>
+    </div>
+    <div id=Body>
+      <p style="font-weight: bold;">
+        Hello! Welcome To AI Simulator
+      <br>
+      <div style="text-align: center;">
+        Please Enter Your Name: <input type="text" id = "Name">
+        
+        <button onclick="getName()">Submit</button>
+        <script>
+          function getName() {
+            document.getElementById('Name')
+          }
+        </script></div>
+      </p>
+
+    </div>
   </body>
 </html>
